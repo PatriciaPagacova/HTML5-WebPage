@@ -8,5 +8,8 @@ Responsive web page.
 - CSS3
 - Inkscape
 
+## Desktop view
 ![](images/Webpage.gif)
+
+## Mobile view
 ![](images/Webpage_mobil.gif)
