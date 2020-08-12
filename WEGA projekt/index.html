@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Kvetinárstvo Slnečnica</title>
+	<meta charset="utf-8">
+	<link href="styleMobile.css" rel="stylesheet" type="text/css" media='screen and (max-width: 1024px)'>
+	<link href="style.css" rel="stylesheet" type="text/css" media='screen and (min-width: 1025px)'>
+	<script src="http://www.kasman.sk/javascripty/date.1.js"></script>
+	<script>
+		function openMenu() {
+			document.getElementById("myNav").style.display = "flex";
+			document.getElementById("btnOpenMenu").style.display = "none";
+		}
+		function closeMenu() {
+			document.getElementById("myNav").style.display = "none";
+			document.getElementById("btnOpenMenu").style.display = "block";
+		}
+	</script>
+</head>
+
+<body>
+	<div id="btnOpenMenu">
+		<button onclick="openMenu()"><img src="images/menuIcon.svg" alt="Menu"></button>
+	</div>
+	<header>
+		<section class="header-img">
+			<img src= "images/logo.svg" alt="logo">
+		</section>
+		<section class="header-text">
+			<h1>Dnes má meniny: <span id="date_meniny"></span></h1>
+		</section>		
+	</header>
+
+	<nav id="myNav">
+		<button onclick="closeMenu()" >&times;</button>
+		<a href="index.html" class="activeMenuItem">O NÁS</a>
+		<a href="ponuka.html">PONUKA</a>
+		<a href="venovania.html">VENOVANIA</a>
+		<a href="kontakt.html">KONTAKT</a>
+	</nav>
+
+	<section class="banner">
+		<img src="images/banner.jpg" alt="Banner">
+		<div id="activeCategoryBannerTxt">NAJ KVETINÁRSTVO</div>
+	</section>  
+
+	<section class="irregContent">
+		<div class="row flex40 simpleContent">
+			<div id="welcomeBlock" class="flex30">
+				<p>VITAJTE V KVETINÁRSTVE SLNEČNICA!</p>
+			</div>
+			<div id="ourShop" class="flex70 yellowTitle">
+				<h1>Naša predajňa</h1>
+				<img src= "images/shop.jpg" alt="predajňa">
+				<p>
+					V našom kvetinárstve nájdete bohatý výber rezaných a črepníkových kvetov.Pripravené je pre Vás množstvo viazaných gratulačných, príležitostných či smútočných kytíc a vencov. Kyticu Vám radi uviažeme aj podľa Vášho želania.
+				</p>
+			</div>
+		</div>
+		<div class="row flex30 simpleContent">
+			<div id="ourOffer" class="dataBlock flex30 yellowTitle">
+				<h1>Naša ponuka</h1>
+				<img src= "images/ourOffer.jpg" alt="ponuka">
+			</div>
+			<div id="ourEmployees" class="dataBlock flex40">
+				<h1>Naši zamestnanci</h1>
+				<img src= "images/employees.jpg" alt="zamestnanci">
+			</div>
+			<div id="bigSunflower" class="dataBlock flex30">
+				<img src= "images/bigSunflower.jpg" alt="slnečnica">
+			</div>
+		</div>
+		<div class="row flex30 simpleContent">
+			<div id="bindingBouquets" class="dataBlock flex70">
+				<h1>Viazanie kytíc</h1>
+				<img src= "images/bindingBouquets.jpg" alt="zamestnanci">
+			</div>
+			<div id="bouquetModel" class="dataBlock flex30 yellowTitle">
+				<a href="UkazkaNasejPrace.html">
+					<h1>3D ukážka >></h1>
+					<img src= "images/3dBouquetModel.jpg" alt="3D ukážka">
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<section class="foot-logo">
+			<img src="images/smallLogo.svg" alt="Logo">
+		</section>
+		<section class="foot-address">
+			<img class="residencyAdressIcon" src="images/homeIcon.svg" alt="Ikona domov"> 
+			<div class="residencyAdress">
+				Kvetinárstvo Slnečnica s. r. o.<br>
+				Romanova 2<br>
+				960 25 Bratislava
+			</div>
+		</section>
+		<section class="foot-contact">
+			<p>
+				<img src="images/emailIcon.svg" alt="Ikona email"> 
+				<a href="mailto:kvetinarstvoslnecnica@gmail.com">kvetinarstvoslnecnica@gmail.com</a><br>
+				<img src="images/smartphoneIcon.svg" alt="Ikona email"> 
+				0949 500 500
+			</p>
+		</section>
+	</footer>
+
+	<!-- toto tu musi byt kvoli aktualnym meninam -->
+	<span id="kasman"><a href="http://www.kasman.sk/javascript">JavaScript</a></span>
+
+</body>
+</html>

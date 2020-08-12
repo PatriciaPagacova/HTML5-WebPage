@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Kvetinárstvo Slnečnica</title>
+	<meta charset="utf-8">
+	<link href="styleMobile.css" rel="stylesheet" type="text/css" media='screen and (max-width: 1024px)'>
+	<link href="style.css" rel="stylesheet" type="text/css" media='screen and (min-width: 1025px)'>
+	<script src="http://www.kasman.sk/javascripty/date.1.js"></script>
+	<script>
+		function openMenu() {
+			document.getElementById("myNav").style.display = "flex";
+			document.getElementById("btnOpenMenu").style.display = "none";
+		}
+		function closeMenu() {
+			document.getElementById("myNav").style.display = "none";
+			document.getElementById("btnOpenMenu").style.display = "block";
+		}
+	</script>
+</head>
+
+<body>
+	<div id="btnOpenMenu">
+		<button onclick="openMenu()"><img src="images/menuIcon.svg" alt="Menu"></button>
+	</div>
+	<header>
+		<section class="header-img">
+			<a href="index.html"><img src= "images/logo.svg" alt="logo"></a>
+		</section>
+		<section class="header-text">
+			<h1>Dnes má meniny: <span id="date_meniny"></span></h1>
+			
+		</section>		
+	</header>
+
+	<nav id="myNav">
+		<button onclick="closeMenu()" >&times;</button>
+		<a href="index.html">O NÁS</a>
+		<a href="ponuka.html">PONUKA</a>
+		<a href="venovania.html">VENOVANIA</a>
+		<a href="kontakt.html" class="activeMenuItem">KONTAKT</a>
+	</nav>
+
+	<section class="banner">
+		<img src="images/banner.jpg" alt="Banner">
+		<div id="activeCategoryBannerTxt">KONTAKT</div>
+	</section>  
+
+	<section class="simpleContent">
+		<div id="addressBlock" class="dataBlock yellowTitle">
+			<h1>Adresy</h1>
+			<img class="residencyAdressIcon" src="images/homeIcon.svg" alt="Ikona domov"> 
+			<div class="residencyAdress">
+				Kvetinárstvo Slnečnica s.r.o.<br>
+				Romanova 2<br>
+				960 25 Bratislava
+			</div>
+			<p>
+				<img src="images/emailIcon.svg" alt="Ikona email"> 
+				<a href="mailto:kvetinarstvoslnecnica@gmail.com">kvetinarstvoslnecnica@gmail.com</a><br>
+				<img src="images/smartphoneIcon.svg" alt="Ikona email"> 
+				0949 500 500
+			</p>
+		</div>
+		<div id="openingHrsBlock" class="dataBlock">
+			<h1>Otváracie hodiny</h1>
+			<table>
+				<tr>
+					<td>Pondelok</td><td>8:00 - 19:00</td>
+				</tr>
+				<tr>
+					<td>Útorok</td><td>8:00 - 19:00</td>
+				</tr>
+				<tr>
+					<td>Streda</td><td>8:00 - 19:00</td>
+				</tr>
+				<tr>
+					<td>Štvrtok</td><td>8:00 - 19:00</td>
+				</tr>
+				<tr>
+					<td>Piatok</td><td>8:00 - 19:00</td>
+				</tr>
+				<tr>
+					<td>Sobota</td><td>8:00 - 19:00</td>
+				</tr>
+				<tr>
+					<td>Nedeľa</td><td>8:00 - 19:00</td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<h1><img src="images/mapIcon.svg" alt="MapIcon">Mapa</h1>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.729485826155!2d17.110071515623233!3d48.11545387922171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c89a6add20007%3A0x45c76e42a09d4285!2sRomanova+2446%2F2%2C+851+02+Petr%C5%BEalka!5e0!3m2!1ssk!2ssk!4v1515352561407" allowfullscreen></iframe>
+		</div>
+		<div>
+			<h1>Ukážka našej predajne</h1>
+			<iframe src="https://www.youtube.com/embed/7Ntp1LginiQ" allowfullscreen></iframe>
+		</div>
+	</section>
+
+	<footer>
+		<section class="foot-logo">
+			<img src="images/smallLogo.svg" alt="Logo">
+		</section>
+		<section class="foot-address">
+			<img class="residencyAdressIcon" src="images/homeIcon.svg" alt="Ikona domov"> 
+			<div class="residencyAdress">
+				Kvetinárstvo Slnečnica s. r. o.<br>
+				Romanova 2<br>
+				960 25 Bratislava
+			</div>
+		</section>
+		<section class="foot-contact">
+			<p>
+				<img src="images/emailIcon.svg" alt="Ikona email"> 
+				<a href="mailto:kvetinarstvoslnecnica@gmail.com">kvetinarstvoslnecnica@gmail.com</a><br>
+				<img src="images/smartphoneIcon.svg" alt="Ikona email"> 
+				0949 500 500
+			</p>
+		</section>
+	</footer>
+
+	<!-- toto tu musi byt kvoli aktualnym meninam -->
+	<span id="kasman"><a href="http://www.kasman.sk/javascript">JavaScript</a></span>
+</body>
+</html>

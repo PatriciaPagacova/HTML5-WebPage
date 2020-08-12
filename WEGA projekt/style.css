@@ -1,0 +1,514 @@
+body
+{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
+    grid-template-rows: 120px 60px auto auto auto auto auto;  
+    font-family: Arial, sans-serif, Helvetica;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 0 0 0 0;
+    background-color: #E1E1E1;
+}
+
+a{
+    color: black;
+}
+
+button{
+    display:none;
+}
+
+
+header{
+    grid-area: header;
+    display: flex;
+    background-color: #C0C0C0;
+}
+
+.header-img{
+    width: 50%;
+}
+
+.header-img img{
+    margin-top: 10px;
+    margin-left: 33%;
+    height: 100px; 
+}
+
+.header-text{
+    width: 50%;
+    text-align: right;
+    padding-top: 20px;
+    margin-right: 80px;
+}
+
+.header-text h1{
+    font-family: Lucida Calligraphy, cursive;
+    font-weight: normal;
+}
+
+
+nav{
+    grid-area: nav;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    align-items: center;
+    background-color: #008f01;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;   
+    justify-content: space-between;
+    padding-left: 16%;
+    padding-right: 13%;
+    box-shadow: 0px 15px 0px rgba(0,143,1,0.6);
+    z-index: 2;
+}
+
+nav a{
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+}
+
+.activeMenuItem{
+    color: yellow;
+}
+
+nav a:hover{
+    color: yellow;
+}
+
+
+.banner{
+    grid-area: banner;
+}
+
+.banner img{
+    min-width: 100%;
+    height: 200px;
+}
+
+.banner #activeCategoryBannerTxt{
+    margin-top:-66px;
+    height: 43px;
+    background-color: white;
+    opacity: 0.5;
+    padding-left: 300px;
+    padding-top: 15px;
+    font-size: 2.2em;
+    text-align: left;
+}
+
+
+.categories{
+    grid-area: categories;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 5px;
+}
+
+.categories li{
+    text-align: center;
+    list-style-type: none;
+    width: 200px;
+    background-color: #C0C0C0;
+    border-bottom: 2px solid #D3D3D3;
+    padding: 10px;
+    box-shadow: 7px 7px 4px grey;
+}
+
+.categories li article{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+}
+
+.categories a{
+    color: white;
+    text-decoration: none;
+}
+
+.categories a:hover{
+    font-weight: bold;
+}
+
+
+li.listHeader{
+    background-color: #00CC00;
+    margin-bottom: 5px;
+    border: 0px;
+}
+
+.activeCategory{
+    font-weight: bold;
+}
+
+
+.products{
+    grid-area: products;
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px 17% 100px 30px;
+}
+
+.products h1{
+    background-color: #FFE723;
+    font-weight: normal;
+    letter-spacing: 7px;
+    padding: 15px 50px 15px 50px;
+    width: 100%;
+    box-shadow: 7px 7px 4px #FFD700;
+}
+
+.products ul{
+    padding-left: 0px;
+    width: 100%;
+}
+
+.products li{
+    background-color: white;
+    box-shadow: 7px 7px 4px grey;
+    border-bottom: 2px solid #D3D3D3;
+    list-style-type: none;
+    vertical-align: middle;
+    border-bottom: 2px solid #D3D3D3;
+    padding: 5px 5px 5px 20px;
+    width: 100%;
+    min-height: 60px;
+}
+
+.products li:before{
+    background-image: url('images/sunflower.svg');
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    float: left;
+    width: 40px; 
+    height: 40px;
+    content:"";
+    margin: 10px 50px 0px 20px;
+    padding-bottom: 10px;
+}
+
+article.product {
+    border: 1px solid #C0C0C0;
+    text-align: center;
+    font-size: 0.5em;
+    padding-top: 20px;
+    width: 150px;
+    height: 200px;
+    background-color: white;
+    margin-right: 15px;
+    margin-bottom: 25px;
+    box-shadow: 7px 7px 4px #888888;
+}
+
+article.product p{
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 0px;
+}
+
+article.product span.productDesc{
+    float: left;
+    text-align: left;
+}
+
+article.product span.productPrice{
+    float: right;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+article.product img{
+    height: 150px;
+    border: 1px solid #D3D3D3;
+}
+
+
+.simpleContent{
+    grid-area: simpleContent;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 100px;
+    padding-right: 55px;
+}
+
+.simpleContent img{
+    height: 1em;
+}
+
+.simpleContent div{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.simpleContent h1{
+    padding: 7px 7px 7px 20px;
+    font-weight: normal;
+    background-color: #008f01;
+    box-shadow: 0px 10px 0px rgba(0,143,1,0.6);
+}
+
+.simpleContent iframe{
+    width: 100%;
+    height: 500px;
+    border: 0;
+}
+
+.simpleContent article{
+    width: 460px;
+    height: 200px;
+    margin-bottom: 50px;
+    background-color: white;
+    box-shadow: 7px 7px 4px #888888;
+    padding: 20px;
+    border: 1px solid #C0C0C0;
+    transition: background-color 1s ease-out;
+}
+
+.simpleContent article:hover{
+    background-color: #008f01;
+}
+
+.simpleContent article img{
+    height: 200px;
+    width: 250px;
+    float: right;
+    margin-top: -80px;
+}
+
+.simpleContent a{
+    text-decoration: none;
+}
+
+.simpleContent a h2{
+    font-weight: normal;
+    color: black;
+}
+
+iframe#model{
+    height: 700px;
+}
+
+div.dataBlock{
+    background-color: white;
+    box-shadow: 7px 7px 4px #888888;
+    margin-bottom: 20px;
+}
+
+.dataBlock h1{
+    padding: 7px 7px 7px 20px;
+    margin: 0px 0px 20px 0px;
+    font-weight: normal;
+}
+
+
+.irregContent{
+    grid-area: irregContent;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 55px 55px 100px;
+}
+
+.irregContent img{
+    margin-bottom: -10px;
+}
+
+.row {
+  height: 250px;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+
+.row h1{
+  margin-top: 0px;
+  margin-bottom: 9px;
+}
+
+.irregContent div{
+  margin: 0px 10px 10px 10px;
+  height: 100%;
+}
+
+.flex70 {
+  flex: 7;
+}
+
+.flex30 {
+  flex: 3
+}
+
+.flex40 {
+  flex: 4
+}
+
+.irregContent img{
+    width: 100%;
+    height: 250px;
+}
+
+div#welcomeBlock{
+    background-color: #008f01;
+    border: 3px solid yellow;
+    height: 300px;
+    color: white;
+    text-align: center;
+}
+
+div#welcomeBlock p{
+    vertical-align: center;
+    font-size: 1.3em;
+    line-height: 3em;
+}
+
+div#ourShop{
+    background-color: white;
+}
+
+#ourShop img{
+    width: 50%;
+    float: left;
+    margin-right: 5px;
+}
+
+#ourShop p{
+    display: block;
+    padding-bottom: 19px;
+    font-family: Calisto MT, monospace;
+}
+
+div#bigSunflower img{
+    height: 302px;
+}
+
+.yellowTitle h1{
+    background-color: yellow;
+    box-shadow: 0px 10px 0px rgba(255,255,0,0.6);
+}
+
+
+div#addressBlock{
+    width: 500px;
+    height: 300px;
+}
+
+#addressBlock img.residencyAdressIcon{
+    height: 50px;
+    margin-left: 53px;
+    margin-top: 40px;
+}
+
+#addressBlock img{
+    margin-left: 40px;
+}
+
+#addressBlock div.residencyAdress{
+    margin-left: 10px;
+    width: 300px;
+}
+
+#addressBlock p{
+    padding-left: 50px;
+}
+
+#addressBlock img{
+    height: 0.9em;
+}
+
+div#residencyAddress {
+    width: 500px;
+    height: 300px;
+}
+
+#openingHrsBlock table{
+    padding-left: 50px;
+}
+
+div#openingHrsBlock{
+    background-image: url("images/clock.svg");
+    background-repeat: no-repeat;
+    background-position: 80% 230%;
+    background-size: 250px 250px;
+    width: 500px;
+    height: 300px;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background-color: #008f01; 
+    box-shadow: 0px -15px 0px rgba(0,143,1,0.6);
+    padding-left: 16%;
+    padding-right: 13%;
+    font-size: 0.9em;
+}
+
+.foot-logo{
+    width: 20%;
+}
+
+.foot-logo img{
+    height: 100px;
+}
+
+.foot-address{
+    width: 50%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+img.residencyAdressIcon{
+    float: left;
+    margin-top: 5px;
+}
+
+div.residencyAdress {
+    display:inline-block;
+    margin-left: 5px;
+}
+
+.foot-contact{
+    width: 30%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+footer img{
+    height: 0.9em;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#kasman{
+    display: none;
+}
+
+
+body{
+
+    grid-template-areas:    
+    'header        header        header        header        header        header        header        header        header        header  '     
+    'nav           nav           nav           nav           nav           nav           nav           nav           nav           nav     '
+    'banner        banner        banner        banner        banner        banner        banner        banner        banner        banner  '
+    'categories    categories    categories    products      products      products      products      products      products      products'
+    '.             simpleContent simpleContent simpleContent simpleContent simpleContent simpleContent simpleContent simpleContent .       '
+    '.             irregContent  irregContent  irregContent  irregContent  irregContent  irregContent  irregContent  irregContent  .       '
+    'footer        footer        footer        footer        footer        footer        footer        footer        footer        footer  ';
+}
